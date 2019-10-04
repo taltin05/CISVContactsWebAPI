@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CISVContacts
 {
@@ -33,6 +34,8 @@ namespace CISVContacts
                     .AllowAnyHeader()
                     .AllowCredentials());
             });
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             var connection = Configuration.GetConnectionString("CisvDbContext");
             services.AddDbContext<CISVContext>(options => options.UseSqlServer(connection));

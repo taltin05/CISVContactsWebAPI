@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/CISVContacts/",
+      "applicationUrl": "http://localhost/contacts",
       "sslPort": 0
     },
     "iisExpress": {
@@ -13,7 +13,8 @@
   },
   "profiles": {
     "IIS Express": {
-      "commandName": "IISExpress",
+      "commandName": "IIS",
+      "launchBrowser": true,
       "launchUrl": "api/conts",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
