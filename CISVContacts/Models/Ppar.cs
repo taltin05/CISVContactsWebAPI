@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CISVContacts
 {
@@ -17,5 +18,6 @@ namespace CISVContacts
         public DateTime? CreateDatetime { get; set; }
         public int? SessIdModify { get; set; }
         public DateTime? ModifyDatetime { get; set; }
+
     }
 }
